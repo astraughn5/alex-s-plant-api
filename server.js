@@ -45,7 +45,7 @@ app.get('/', (req, res)=>{
 app.get('/api/:name', (req, res)=>{
 	const plantName = req.params.name.toLowerCase()
 	if (plants[plantName]){
-		res.json(plant[plantName])
+		res.json(plants[plantName])
 	}
 	else{
 		res.json(plants['unknown'])
