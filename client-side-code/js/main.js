@@ -8,6 +8,7 @@ async function apiRequest(){
 
         console.log(data)
         document.querySelector('h2').innerText = data.light
+        document.querySelector('img').src = data.image
     }catch(error){
         console.log(error)
     }
